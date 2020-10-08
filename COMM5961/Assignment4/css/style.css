@@ -33,7 +33,7 @@ body{
     width:20%;
     box-sizing:border-box;
     text-align: center;
-    
+    padding:20px;
 
 }
 
@@ -47,11 +47,16 @@ body{
 
 .Button{
     text-align: center;
-    margin-top:20px;    
+    margin-top:20px;
+
 }
 
 .result{
     text-align:center;
 
+}
+
+.button{
+    padding:10px;
 }
 
