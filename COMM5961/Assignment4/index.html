@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 4</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    </head>
+
+
+    <body>
+        <header id="main-header">
+            <div class="container">
+                <h1>Assignment 4</h1>
+            </div>
+        </header>
+
+    <h2 class="rules">Rule</h2>
+    <ui class="rules">
+        <li>Guess a number from 1 to 99 (Integer)</li>
+        <li>If you guess wrong, the website will tell you whether it is too small or too big</li>
+        <li>So you can narrow the range after several guesses</li>
+        <li>If your guess is right, the website will show "Bingo!"</li>
+        <li>Click "Play Again", then a new random number will generate for you to guess</li>
+    </ui>
+
+    <h2 class="rules">Play now!</h2>
+
+    <div class="ui input">
+        <input type="text" id="number" placeholder="Enter a number from 1-99">
+    </div>
+
+    <div class="Button">
+
+    <button class="button" onclick="myFunction()">Guess</button>
+
+    <button onclick="refresh()">Play Again</button>
+
+    </div>
+
+    <h4 class="result" id="result"></h4>
+    
+    <footer id="main-footer">
+            <p>Copyright &copy;2020 ZHU Jiajie</p>
+    </footer>
+
+    <script>
+
+        var b;
+        
+        refresh()
+        
+            function myFunction(){
+                
+        
+        var a = document.getElementById("number").value;
+
+        a = Number(a)
+        if(!Number.isInteger(a)){ //a is not an integer
+            document.getElementById("result").innerText="Please enter an integer";
+            return;
+        }
+
+        
+        if(a<b){
+            document.getElementById("result").innerText="Too small!";
+        }
+        
+        if(a>b){
+            document.getElementById("result").innerText="Too big!";
+        }
+        
+        if(a==b){
+            document.getElementById("result").innerText="Bingo!";
+        
+        }
+
+        if(a>99){
+            document.getElementById("result").innerText="Please enter a number from 1-99!";
+        }
+
+        if(a<1){
+            document.getElementById("result").innerText="Please enter a number from 1-99!";
+        }
+        
+  
+            }
+        
+            function refresh(){
+                b = Math.floor(Math.random()*99+1);
+                document.getElementById("result").innerText="";
+                document.getElementById("number").value="";
+            }
+        </script>
+                
+    </body>
+    
+
+</html>
+
