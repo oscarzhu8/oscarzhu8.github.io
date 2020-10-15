@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 5</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header id="main-header">
+            <div class="container">
+                <h1>Assignment 5</h1>
+            </div>
+        </header>
+
+    <div class="text">
+    <h2>NBA Data for 2014(You can select different views)</h2>
+    </div>
+
+    <div class="select">
+        <h4>Select by:</h4>
+        <select id="selectview">
+            <option value="1">Player</option>
+            <option value="2">Team</option>
+            <option value="3">College</option>
+            <option value="4">Years</option>
+        </select>
+    </div>
+
+    <div id="view" class="view">
+        <iframe class="airtable-embed" src="https://airtable.com/embed/shrSzAbQGUhoMRJx4?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+    </div>
+
+    <footer id="main-footer">
+        <p>Copyright &copy;2020 ZHU Jiajie</p>
+    </footer>
+    
+    <script>
+           var select=document.getElementById("selectview");
+        select.onchange=function(){
+            var optionVal=select.value;
+            switch(optionVal){
+                case '1':
+                        var area=document.getElementById("view");
+                        area.innerHTML='<iframe class="airtable-embed" src="https://airtable.com/embed/shrSzAbQGUhoMRJx4?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>';
+                        break;
+                case '2':
+                        var area=document.getElementById("view");
+                        area.innerHTML='<iframe class="airtable-embed" src="https://airtable.com/embed/shroyWzIQzV7XF3ZG?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>';
+                        break;
+                case '3':
+                        var area=document.getElementById("view");
+                        area.innerHTML='<iframe class="airtable-embed" src="https://airtable.com/embed/shrNVTbKLnlD7thvJ?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>'; 
+                        break; 
+                case '4':
+                        var area=document.getElementById("view");
+                        area.innerHTML='<iframe class="airtable-embed" src="https://airtable.com/embed/shrvublhNgEVWus66?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>'; 
+                        break;   
+   
+            }
+        };
+    </script>
+
+    </body>
+
+</html>
