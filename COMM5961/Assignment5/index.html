@@ -18,10 +18,10 @@
     <div class="select">
         <h4>Select by:</h4>
         <select id="selectview">
-            <option value="1">Player</option>
-            <option value="2">Team</option>
-            <option value="3">College</option>
-            <option value="4">Years</option>
+            <option value="0">Player</option>
+            <option value="1">Team</option>
+            <option value="2">College</option>
+            <option value="3">Years</option>
         </select>
     </div>
 
@@ -38,19 +38,19 @@
         select.onchange=function(){
             var optionVal=select.value;
             switch(optionVal){
-                case '1':
+                case '0':
                         var area=document.getElementById("view");
                         area.innerHTML='<iframe class="airtable-embed" src="https://airtable.com/embed/shrSzAbQGUhoMRJx4?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>';
                         break;
-                case '2':
+                case '1':
                         var area=document.getElementById("view");
                         area.innerHTML='<iframe class="airtable-embed" src="https://airtable.com/embed/shroyWzIQzV7XF3ZG?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>';
                         break;
-                case '3':
+                case '2':
                         var area=document.getElementById("view");
                         area.innerHTML='<iframe class="airtable-embed" src="https://airtable.com/embed/shrNVTbKLnlD7thvJ?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>'; 
                         break; 
-                case '4':
+                case '3':
                         var area=document.getElementById("view");
                         area.innerHTML='<iframe class="airtable-embed" src="https://airtable.com/embed/shrvublhNgEVWus66?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>'; 
                         break;   
