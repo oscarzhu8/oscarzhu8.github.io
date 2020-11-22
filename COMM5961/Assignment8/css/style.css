@@ -15,6 +15,14 @@ body{
 
 }
 
+.word{
+    width:80%;
+    margin:auto;
+    margin:140px;
+    overflow:hidden;
+
+}
+
 #main-header{
     background-color:rgb(115, 148, 238);
     color:#fff;
