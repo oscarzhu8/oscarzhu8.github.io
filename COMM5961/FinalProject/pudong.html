@@ -25,7 +25,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>黄浦区景点</title>
+  <title>浦东新区景点</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -94,7 +94,7 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2 style="color: black; font-weight: bold;">- 黄浦区约会景点 -</h2><h3 style="color: black; font-weight: bold; text-align:center;">（点击各景点可查看具体位置，再点击图标显示详细介绍）</h3>
+          <h2 style="color: black; font-weight: bold;">- 浦东新区约会景点 -</h2><h3 style="color: black; font-weight: bold; text-align:center;">（点击各景点可查看具体位置，再点击图标显示详细介绍）</h3>
         </div>
 
       </div>
@@ -103,14 +103,19 @@
     <!-- ======= Portfolio Details Section ======= -->
     <section class="portfolio-details">
         <div class="container">
-       <button class="BT" onclick='choose(0)'>豫园</button>
-       <button class="BT" onclick='choose(1)'>上海博物馆</button>
-       <button class="BT" onclick='choose(2)'>外滩</button>
-       <button class="BT" onclick='choose(3)'>杜莎夫人蜡像馆</button>
-       <button class="BT" onclick='choose(4)'>Hello Kitty</button>
-       <button class="BT" onclick='choose(5)'>无印良品</button>
-       <button class="BT" onclick='choose(6)'>私人影院</button>
-       <button class="BT" onclick='choose(7)'>南京路步行街</button>
+       <button class="BT" onclick='choose(0)'>迪士尼</button>
+       <button class="BT" onclick='choose(1)'>世博源</button>
+       <button class="BT" onclick='choose(2)'>海昌海洋公园</button>
+       <button class="BT" onclick='choose(3)'>上海科技馆</button>
+       <button class="BT" onclick='choose(4)'>野生动物园</button>
+       <button class="BT" onclick='choose(5)'>金茂大厦</button>
+       <br>
+       <button class="BT" onclick='choose(6)'>上海水族馆</button>
+       <button class="BT" onclick='choose(7)'>滑冰俱乐部</button>
+       <button class="BT" onclick='choose(8)'>世纪公园</button>
+       <button class="BT" onclick='choose(9)'>浦东图书馆</button>
+       <button class="BT" onclick='choose(10)'>东方明珠</button>
+       <button class="BT" onclick='choose(11)'>乐玩陶艺</button>
    <br>
        <button class="bt" onclick='clearMarker()'>清除标记</button>
           <div id="map" class="map" style="height:400px; width:100%; padding:0px 10%; margin:50px 0px">
@@ -168,9 +173,9 @@
       })
     ],
     view: new ol.View({
-      center: ol.proj.fromLonLat([121.4884, 31.2335]),
+      center: ol.proj.fromLonLat([121.8175, 31.1513]),
       
-      zoom: 13
+      zoom: 10
     })
   });
   var iconStyle = new ol.style.Style({
@@ -185,35 +190,51 @@
 const features=[new ol.Feature({
     type: 'click',
     desc: 'hello', name:"123", link:"www.baidu.com",
-                 geometry: new ol.geom.Point(ol.proj.fromLonLat([121.48775, 31.22892]))
+                 geometry: new ol.geom.Point(ol.proj.fromLonLat([121.66371, 31.14334]))
              }),new ol.Feature({
     type: 'click',
     desc: 'hello', name:"345",
-                 geometry: new ol.geom.Point(ol.proj.fromLonLat([121.47103, 31.23019]))
+                 geometry: new ol.geom.Point(ol.proj.fromLonLat([121.48861, 31.18603]))
              }),new ol.Feature({
     type: 'click',
     desc: 'hello', name:"123",
-                 geometry: new ol.geom.Point(ol.proj.fromLonLat([121.48825, 31.23519]))
+                 geometry: new ol.geom.Point(ol.proj.fromLonLat([121.92430, 30.90048]))
              }),new ol.Feature({
     type: 'click',
     desc: 'hello', name:"123",
-                 geometry: new ol.geom.Point(ol.proj.fromLonLat([121.46889, 31.23678]))
+                 geometry: new ol.geom.Point(ol.proj.fromLonLat([121.53777, 31.22059]))
              }),new ol.Feature({
     type: 'click',
     desc: 'hello', name:"123", link:"www.baidu.com",
-                 geometry: new ol.geom.Point(ol.proj.fromLonLat([121.47137, 31.23649]))
+                 geometry: new ol.geom.Point(ol.proj.fromLonLat([121.71707, 31.05715]))
              }),new ol.Feature({
     type: 'click',
     desc: 'hello', name:"345",
-                 geometry: new ol.geom.Point(ol.proj.fromLonLat([121.46057, 31.21985]))
+                 geometry: new ol.geom.Point(ol.proj.fromLonLat([121.50142, 31.23725]))
              }),new ol.Feature({
     type: 'click',
     desc: 'hello', name:"123",
-                 geometry: new ol.geom.Point(ol.proj.fromLonLat([121.47943, 31.23873]))
+                 geometry: new ol.geom.Point(ol.proj.fromLonLat([121.49749, 31.24252]))
              }),new ol.Feature({
     type: 'click',
     desc: 'hello', name:"123",
-                 geometry: new ol.geom.Point(ol.proj.fromLonLat([121.47624, 31.23789]))
+                 geometry: new ol.geom.Point(ol.proj.fromLonLat([121.48935, 31.18722]))
+             }),new ol.Feature({
+    type: 'click',
+    desc: 'hello', name:"123", link:"www.baidu.com",
+                 geometry: new ol.geom.Point(ol.proj.fromLonLat([121.55057, 31.21932]))
+             }),new ol.Feature({
+    type: 'click',
+    desc: 'hello', name:"345",
+                 geometry: new ol.geom.Point(ol.proj.fromLonLat([121.53730, 31.19411]))
+             }),new ol.Feature({
+    type: 'click',
+    desc: 'hello', name:"123",
+                 geometry: new ol.geom.Point(ol.proj.fromLonLat([121.49517, 31.24194]))
+             }),new ol.Feature({
+    type: 'click',
+    desc: 'hello', name:"123",
+                 geometry: new ol.geom.Point(ol.proj.fromLonLat([121.51412, 31.23005]))
              })
             ] 
 
