@@ -49,14 +49,7 @@
         <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
 </script>
 
-        <!--引用百度地图API-->
-        <style type="text/css">
-            html,body{margin:0;padding:0;}
-            .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
-            .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
-        </style>
-        <script type="text/javascript" src="https://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
-        <script src="https://api.map.baidu.com/getmodules?v=1.1&amp;mod=oppc,control" type="text/javascript" charset="utf-8"></script>
+      
 
     </head>
     
@@ -807,17 +800,12 @@
             <div class="container">
                 <header class="section-header">
                     <h3>地区及地图</h3>
-                    <p>TOP30约会场所分布在了六个区，点击可查看地图及具体位置</p>
+                    <p style="padding-bottom:0;">TOP30约会场所分布在了六个区，点击可查看地图及具体位置</p>
                 </header>
                 <div class="row">
                     
                     <div class="col-lg-12">
-                                <!--百度地图容器-->
-                                <button type="button" class="btn btn-warning" id="showrate" onclick="showmap()"
-                                style="display: block; margin-left: auto;margin-right: auto; margin-top:1px;">点击显示上海地图</button>
-                              <div id="map" style="display:none">
-                                <div  style="width:100%; height:400px; text-align: center" id="dituContent"></div>
-                              </div>
+                               
                            
                         <ul class="portfolio-flters" id="portfolio-flters2">
                             <a href="songjiang.html"><li style="background-color:black; font-weight: bold;">松江区</a></li>
