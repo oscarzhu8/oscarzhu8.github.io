@@ -158,19 +158,19 @@
 });
 const features=[new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"123", link:"www.baidu.com",
+    desc: 'hello', name:"123", link:"huanlegu.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.2103, 31.0985]))
              }),new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"345",
+    desc: 'hello', name:"345", link:"maya.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.1705, 31.0973]))
              }),new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"123",
+    desc: 'hello', name:"123", link:"chenshan.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.1781, 31.0787]))
              }),new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"123",
+    desc: 'hello', name:"123", link:"taiwushi.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.1932, 31.0358]))
              })
             ] 
@@ -230,7 +230,7 @@ map.addOverlay(popup);
         var coord = geometry.getCoordinates();
         
         var content=`
-        <a href="${f.get("link")}">地址</a>
+        <a href="${f.get("link")}">详细介绍</a>
         `
     
         

@@ -189,51 +189,51 @@
 });
 const features=[new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"123", link:"www.baidu.com",
+    desc: 'hello', name:"123", link:"disney.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.66371, 31.14334]))
              }),new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"345",
+    desc: 'hello', name:"345", link:"expo.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.48861, 31.18603]))
              }),new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"123",
+    desc: 'hello', name:"123", link:"haichang.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.92430, 30.90048]))
              }),new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"123",
+    desc: 'hello', name:"123", link:"tech.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.53777, 31.22059]))
              }),new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"123", link:"www.baidu.com",
+    desc: 'hello', name:"123", link:"zoo.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.71707, 31.05715]))
              }),new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"345",
+    desc: 'hello', name:"345", link:"jinmao.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.50142, 31.23725]))
              }),new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"123",
+    desc: 'hello', name:"123", link:"aqua.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.49749, 31.24252]))
              }),new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"123",
+    desc: 'hello', name:"123", link:"huabing.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.48935, 31.18722]))
              }),new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"123", link:"www.baidu.com",
+    desc: 'hello', name:"123", link:"century.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.55057, 31.21932]))
              }),new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"345",
+    desc: 'hello', name:"345", link:"library.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.53730, 31.19411]))
              }),new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"123",
+    desc: 'hello', name:"123", link:"orpt.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.49517, 31.24194]))
              }),new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"123",
+    desc: 'hello', name:"123", link:"taoyi.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.51412, 31.23005]))
              })
             ] 
@@ -293,7 +293,7 @@ map.addOverlay(popup);
         var coord = geometry.getCoordinates();
         
         var content=`
-        <a href="${f.get("link")}">地址</a>
+        <a href="${f.get("link")}">详细介绍</a>
         `
     
         

@@ -162,35 +162,35 @@
 });
 const features=[new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"123", link:"www.baidu.com",
+    desc: 'hello', name:"123", link:"yugarden.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.48775, 31.22892]))
              }),new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"345",
+    desc: 'hello', name:"345", link:"musuem.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.47103, 31.23019]))
              }),new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"123",
+    desc: 'hello', name:"123", link:"bund.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.48825, 31.23519]))
              }),new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"123",
+    desc: 'hello', name:"123", link:"dusha.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.46889, 31.23678]))
              }),new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"123", link:"www.baidu.com",
+    desc: 'hello', name:"123", link:"hk.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.47137, 31.23649]))
              }),new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"345",
+    desc: 'hello', name:"345", link:"muji.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.46057, 31.21985]))
              }),new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"123",
+    desc: 'hello', name:"123", link:"siren.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.47943, 31.23873]))
              }),new ol.Feature({
     type: 'click',
-    desc: 'hello', name:"123",
+    desc: 'hello', name:"123", link:"nanjing.html",
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([121.47624, 31.23789]))
              })
             ] 
@@ -250,7 +250,7 @@ map.addOverlay(popup);
         var coord = geometry.getCoordinates();
         
         var content=`
-        <a href="${f.get("link")}">地址</a>
+        <a href="${f.get("link")}">详细介绍</a>
         `
     
         
